@@ -44,7 +44,9 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new RoundedPanel();
-            this.timerDate = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnExport = new RoundedButton();
             this.roundedPanel3 = new RoundedPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.roundedPanel7 = new RoundedPanel();
@@ -53,14 +55,12 @@
             this.roundedPanel5 = new RoundedPanel();
             this.roundedPanel4 = new RoundedPanel();
             this.roundedPanel8 = new RoundedPanel();
-            this.btnExport = new RoundedButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.timerDate = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,6 +97,7 @@
             this.btnLogout.Location = new System.Drawing.Point(-1, 976);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(308, 46);
+            this.btnLogout.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -119,6 +120,7 @@
             this.btnPayments.Location = new System.Drawing.Point(-1, 733);
             this.btnPayments.Name = "btnPayments";
             this.btnPayments.Size = new System.Drawing.Size(308, 46);
+            this.btnPayments.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnPayments.TabIndex = 6;
             this.btnPayments.Text = "Payments";
             this.btnPayments.UseVisualStyleBackColor = false;
@@ -126,7 +128,7 @@
             // 
             // btnReports
             // 
-            this.btnReports.BackColor = System.Drawing.Color.Gray;
+            this.btnReports.BackColor = System.Drawing.Color.Black;
             this.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnReports.CornerRadius = 20;
             this.btnReports.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -142,6 +144,7 @@
             this.btnReports.Location = new System.Drawing.Point(-1, 655);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(308, 46);
+            this.btnReports.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnReports.TabIndex = 5;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -163,6 +166,7 @@
             this.btnCustomers.Location = new System.Drawing.Point(-1, 577);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(308, 46);
+            this.btnCustomers.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnCustomers.TabIndex = 4;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = false;
@@ -182,6 +186,7 @@
             this.btnRentalTransaction.Location = new System.Drawing.Point(-1, 421);
             this.btnRentalTransaction.Name = "btnRentalTransaction";
             this.btnRentalTransaction.Size = new System.Drawing.Size(308, 46);
+            this.btnRentalTransaction.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnRentalTransaction.TabIndex = 3;
             this.btnRentalTransaction.Text = "Rental Transaction";
             this.btnRentalTransaction.UseVisualStyleBackColor = false;
@@ -204,6 +209,7 @@
             this.btnMaintenance.Location = new System.Drawing.Point(-1, 499);
             this.btnMaintenance.Name = "btnMaintenance";
             this.btnMaintenance.Size = new System.Drawing.Size(308, 46);
+            this.btnMaintenance.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnMaintenance.TabIndex = 3;
             this.btnMaintenance.Text = "Maintenance";
             this.btnMaintenance.UseVisualStyleBackColor = false;
@@ -226,6 +232,7 @@
             this.btnInventory.Location = new System.Drawing.Point(-1, 343);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Size = new System.Drawing.Size(308, 46);
+            this.btnInventory.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnInventory.TabIndex = 2;
             this.btnInventory.Text = "Inventory";
             this.btnInventory.UseVisualStyleBackColor = false;
@@ -248,6 +255,7 @@
             this.btnDashboard.Location = new System.Drawing.Point(-1, 265);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(308, 46);
+            this.btnDashboard.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -318,10 +326,40 @@
             this.roundedPanel1.Size = new System.Drawing.Size(1498, 879);
             this.roundedPanel1.TabIndex = 17;
             // 
-            // timerDate
+            // label1
             // 
-            this.timerDate.Enabled = true;
-            this.timerDate.Interval = 1000;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 25);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Recent Customers";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(28, 597);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1438, 374);
+            this.dataGridView1.TabIndex = 23;
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExport.CornerRadius = 20;
+            this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExport.FlatAppearance.BorderSize = 0;
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(1273, 540);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(193, 35);
+            this.btnExport.Style = RoundedButton.ButtonStyles.ButtonX;
+            this.btnExport.TabIndex = 22;
+            this.btnExport.Text = "Export data";
+            this.btnExport.UseVisualStyleBackColor = false;
             // 
             // roundedPanel3
             // 
@@ -411,46 +449,17 @@
             this.roundedPanel8.Size = new System.Drawing.Size(313, 140);
             this.roundedPanel8.TabIndex = 8;
             // 
-            // btnExport
+            // timerDate
             // 
-            this.btnExport.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExport.CornerRadius = 20;
-            this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExport.FlatAppearance.BorderSize = 0;
-            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExport.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(1273, 540);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(193, 35);
-            this.btnExport.TabIndex = 22;
-            this.btnExport.Text = "Export data";
-            this.btnExport.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 597);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1438, 374);
-            this.dataGridView1.TabIndex = 23;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 25);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Recent Customers";
+            this.timerDate.Enabled = true;
+            this.timerDate.Interval = 1000;
             // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblNameAdmin);
             this.Controls.Add(this.lblDate);
@@ -462,11 +471,11 @@
             this.panel1.ResumeLayout(false);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.roundedPanel3.ResumeLayout(false);
             this.roundedPanel3.PerformLayout();
             this.roundedPanel7.ResumeLayout(false);
             this.roundedPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

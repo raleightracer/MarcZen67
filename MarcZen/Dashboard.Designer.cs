@@ -40,7 +40,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new RoundedButton();
             this.btnPayments = new RoundedButton();
-            this.btnReports = new RoundedButton();
             this.btnCustomers = new RoundedButton();
             this.btnRentalTransaction = new RoundedButton();
             this.btnMaintenance = new RoundedButton();
@@ -139,7 +138,6 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnPayments);
-            this.panel1.Controls.Add(this.btnReports);
             this.panel1.Controls.Add(this.btnCustomers);
             this.panel1.Controls.Add(this.btnRentalTransaction);
             this.panel1.Controls.Add(this.btnMaintenance);
@@ -189,7 +187,7 @@
             this.btnPayments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayments.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayments.ForeColor = System.Drawing.Color.White;
-            this.btnPayments.Location = new System.Drawing.Point(0, 734);
+            this.btnPayments.Location = new System.Drawing.Point(0, 650);
             this.btnPayments.Name = "btnPayments";
             this.btnPayments.Size = new System.Drawing.Size(308, 46);
             this.btnPayments.Style = RoundedButton.ButtonStyles.ButtonX;
@@ -197,29 +195,6 @@
             this.btnPayments.Text = "Payments";
             this.btnPayments.UseVisualStyleBackColor = false;
             this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.Color.Black;
-            this.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnReports.CornerRadius = 20;
-            this.btnReports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btnReports.FlatAppearance.BorderSize = 5;
-            this.btnReports.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnReports.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(0, 656);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(308, 46);
-            this.btnReports.Style = RoundedButton.ButtonStyles.ButtonX;
-            this.btnReports.TabIndex = 5;
-            this.btnReports.Text = "Reports";
-            this.btnReports.UseVisualStyleBackColor = false;
-            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // btnCustomers
             // 
@@ -312,7 +287,7 @@
             // 
             // btnDashboard
             // 
-            this.btnDashboard.BackColor = System.Drawing.Color.Gray;
+            this.btnDashboard.BackColor = System.Drawing.Color.Black;
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnDashboard.CornerRadius = 20;
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -701,7 +676,6 @@
         private System.Windows.Forms.Label label5;
         private RoundedButton btnLogout;
         private RoundedButton btnPayments;
-        private RoundedButton btnReports;
         private RoundedButton btnCustomers;
         private RoundedButton btnMaintenance;
         private RoundedButton btnInventory;

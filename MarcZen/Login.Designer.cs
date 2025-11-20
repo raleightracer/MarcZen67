@@ -34,8 +34,8 @@
             this.roundedPanel1 = new RoundedPanel();
             this.btnLogin = new RoundedButton();
             this.cbRememberMe = new System.Windows.Forms.CheckBox();
-            this.roundedTextBoxContainer2 = new RoundedTextBoxContainer();
-            this.roundedTextBoxContainer1 = new RoundedTextBoxContainer();
+            this.txtPassword = new RoundedTextBoxContainer();
+            this.txtUsername = new RoundedTextBoxContainer();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,8 +65,8 @@
             this.roundedPanel1.BorderThickness = 1;
             this.roundedPanel1.Controls.Add(this.btnLogin);
             this.roundedPanel1.Controls.Add(this.cbRememberMe);
-            this.roundedPanel1.Controls.Add(this.roundedTextBoxContainer2);
-            this.roundedPanel1.Controls.Add(this.roundedTextBoxContainer1);
+            this.roundedPanel1.Controls.Add(this.txtPassword);
+            this.roundedPanel1.Controls.Add(this.txtUsername);
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.Controls.Add(this.label2);
             this.roundedPanel1.Controls.Add(this.label1);
@@ -88,6 +88,7 @@
             this.btnLogin.Location = new System.Drawing.Point(72, 661);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(496, 66);
+            this.btnLogin.Style = RoundedButton.ButtonStyles.ButtonX;
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -104,31 +105,31 @@
             this.cbRememberMe.Text = "Remeber me";
             this.cbRememberMe.UseVisualStyleBackColor = true;
             // 
-            // roundedTextBoxContainer2
+            // txtPassword
             // 
-            this.roundedTextBoxContainer2.BackColor = System.Drawing.Color.Transparent;
-            this.roundedTextBoxContainer2.BackColorCustom = System.Drawing.Color.White;
-            this.roundedTextBoxContainer2.BorderColor = System.Drawing.Color.Black;
-            this.roundedTextBoxContainer2.BorderRadius = 10;
-            this.roundedTextBoxContainer2.Location = new System.Drawing.Point(131, 460);
-            this.roundedTextBoxContainer2.Name = "roundedTextBoxContainer2";
-            this.roundedTextBoxContainer2.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.roundedTextBoxContainer2.Size = new System.Drawing.Size(378, 35);
-            this.roundedTextBoxContainer2.TabIndex = 4;
-            this.roundedTextBoxContainer2.TextValue = "";
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BackColorCustom = System.Drawing.Color.White;
+            this.txtPassword.BorderColor = System.Drawing.Color.Black;
+            this.txtPassword.BorderRadius = 10;
+            this.txtPassword.Location = new System.Drawing.Point(131, 460);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtPassword.Size = new System.Drawing.Size(378, 35);
+            this.txtPassword.TabIndex = 4;
+            this.txtPassword.TextValue = "";
             // 
-            // roundedTextBoxContainer1
+            // txtUsername
             // 
-            this.roundedTextBoxContainer1.BackColor = System.Drawing.Color.Transparent;
-            this.roundedTextBoxContainer1.BackColorCustom = System.Drawing.Color.White;
-            this.roundedTextBoxContainer1.BorderColor = System.Drawing.Color.Black;
-            this.roundedTextBoxContainer1.BorderRadius = 10;
-            this.roundedTextBoxContainer1.Location = new System.Drawing.Point(131, 328);
-            this.roundedTextBoxContainer1.Name = "roundedTextBoxContainer1";
-            this.roundedTextBoxContainer1.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.roundedTextBoxContainer1.Size = new System.Drawing.Size(378, 35);
-            this.roundedTextBoxContainer1.TabIndex = 3;
-            this.roundedTextBoxContainer1.TextValue = "";
+            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsername.BackColorCustom = System.Drawing.Color.White;
+            this.txtUsername.BorderColor = System.Drawing.Color.Black;
+            this.txtUsername.BorderRadius = 10;
+            this.txtUsername.Location = new System.Drawing.Point(131, 328);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtUsername.Size = new System.Drawing.Size(378, 35);
+            this.txtUsername.TabIndex = 3;
+            this.txtUsername.TextValue = "";
             // 
             // label3
             // 
@@ -187,7 +188,7 @@
         private System.Windows.Forms.Label label1;
         private RoundedButton btnLogin;
         private System.Windows.Forms.CheckBox cbRememberMe;
-        private RoundedTextBoxContainer roundedTextBoxContainer2;
-        private RoundedTextBoxContainer roundedTextBoxContainer1;
+        private RoundedTextBoxContainer txtPassword;
+        private RoundedTextBoxContainer txtUsername;
     }
 }
