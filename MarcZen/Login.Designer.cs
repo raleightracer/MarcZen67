@@ -1,6 +1,8 @@
-﻿namespace MarcZen
+﻿
+
+namespace MarcZen
 {
-    partial class Login
+    public partial class Login
     {
         /// <summary>
         /// Required designer variable.

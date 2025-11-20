@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace MarcZen
 {
-    public partial class Login : Form
+    partial class Login : Form
     {
         public Login()
         {
@@ -47,7 +47,7 @@ namespace MarcZen
                 return;
             }
 
-            string connectionString = "Data Source=TRACER\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True;";
+            string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=MarcZenDB;Integrated Security=True;";
 
             try
             {

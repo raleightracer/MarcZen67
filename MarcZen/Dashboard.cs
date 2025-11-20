@@ -80,10 +80,23 @@ namespace MarcZen
 
         private void btnPayments_Click(object sender, EventArgs e)
         {
-            var form7 = new Payments();
-            form7.FormClosed += (s, args) => this.Close(); // close main when form2 closes
-            this.Hide(); // keep application message loop running
-            form7.Show();
+            // Create and show Payments inside try/catch so construction/load exceptions don't close the dashboard.
+            try
+            {
+                var form7 = new Payments();
+
+                // Restore the dashboard when payments closes instead of closing the application
+                form7.FormClosed += (s, args) => this.Show();
+
+                this.Hide(); // keep application message loop running
+                form7.Show();
+            }
+            catch (Exception ex)
+            {
+                // If Payments constructor or Load throws, report and keep dashboard visible
+                MessageBox.Show("Failed to open Payments: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Show();
+            }
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
